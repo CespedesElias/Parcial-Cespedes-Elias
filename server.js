@@ -6,7 +6,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-app.use('/api/numeros', new RouterNumeros().start())
+app.use('/numeros', new RouterNumeros().start())
 app.use(express.static('public')) 
 
 const PORT = config.PORT
